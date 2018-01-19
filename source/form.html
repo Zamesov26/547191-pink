@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="head-page head-page--secondary">
+      <!-- тут непонятно как сделать по БЭМ -->
+      <p class="navigation-setting">
+        <a href="#"><img class="pink-logo" src="http://via.placeholder.com/75x22" alt="Логотип PINK"></a>
+        <button>Закарыть</button>
+      </p>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a href="#">Главная</a></li>
+          <li class="site-nav__item"><a href="#">Фотографии</a></li>
+          <li class="site-nav__item"><a href="#">Конкурс</a></li>
+          <li class="site-nav__item"><a href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+      <p class="preview">Конкурс на самое безбашенное путешествие с Пинк</p> <!-- может заголовок?-->
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Форма для учатсия в конкурсе</h1>
+      <div class="promo">
+        <p class="promo__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      </div>
+
+      <section class="user">
+        <h2 class="visually-hidden">Заявка для участия</h2>
+        <table class="user__table" action="https://echo.htmlacademy.ru" method="post">
+
+          <fieldset class="user__name text-fields">
+            <legend class="visually-hidden">Как к вам обращаться</legend>
+            <p class="text-fields__box">
+              <label class="text-fields__label" for="surname">Фамилия</label>
+              <input class="text-fields__value" id="surname" name="surname" type="text">
+            </p>
+            <p class="text-fields__box">
+              <label class="text-fields__label" for="first-name">Имя</label>
+              <input class="text-fields__value" id="first-name" name="" type="text">
+            </p>
+            <p class="text-fields__box">
+              <label class="text-fields__label" for="patronymic">Отчество</label>
+              <input class="text-fields__value" id="patronymic" name="patronymic" type="text">
+            </p>
+          </fieldset>
+
+          <fieldset cass="user__achievement selection-fields">
+            <legend>Ваши Безбашенные достижеия в путешествии</legend>
+            <p class="selection-fields__box">
+              <input class="selection-fields__check" id="shark" name="shark" type="checkbox">
+              <label class="selection-fields__label" for="shark">Сделал селфи с акулой</label>
+            </p>
+            <p class="selection-fields__box">
+              <input class="selection-fields__check" id="beach" name="beach" type="checkbox">
+              <label class="selection-fields__label" for="beach">Обгорел на пляже</label>
+            </p>
+            <p class="selection-fields__box">
+              <input class="selection-fields__check" id="Chuck-Norris" name="Chuck-Norris" type="checkbox">
+              <label class="selection-fields__label" for="Chuck-Norris">Видел Чака Норриса</label>
+            </p>
+            <p class="selection-fields__box">
+              <input class="selection-fields__check" id="souvenirs" name="souvenirs" type="checkbox">
+              <label class="selection-fields__label" for="souvenirs">Накупил сувениров</label>
+            </p>
+            <p class="selection-fields__box">
+              <input class="selection-fields__check" id="turret" name="turret" type="checkbox">
+              <label class="selection-fields__label" for="turret">Удержал башню</label>
+            </p>
+            <p class="selection-fields__box">
+              <input class="selection-fields__check" id="hotel" name="hotel" type="checkbox">
+              <label class="selection-fields__label" for="hotel">Разгромил отель</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="user__contact text-fields">
+            <legend class="visually-hidden">Контактная информация</legend>
+            <p class="text-fields__box">
+              <label class="text-fields__label" for="telephone">Номер телефона</label>
+              <input class="text-fields__value" id="telephone" name="telephone" type="text">
+            </p>
+            <p class="text-fields__box">
+              <label class="text-fields__label" for="address">Адрес почты</label>
+              <input class="text-fields__value" id="address" name="address" type="text">
+            </p>
+          </fieldset>
+
+          <fieldset  cass="user__os selection-fields">
+            <legend>С каким приложением путешествовали?</legend>
+            <p >
+              <input class="selection-fields__radio" id="iOS" name="iOS" type="radio">
+              <label class="selection-fields__label" for="iOS">Pink для iOS</label>
+            </p>
+            <p >
+              <input class="selection-fields__radio" id="Android" name="Android" type="radio">
+              <label class="selection-fields__label" for="Android">Pink на Android</label>
+            </p>
+            <p >
+              <input class="selection-fields__radio" id="Windows" name="Windows" type="radio">
+              <label class="selection-fields__label" for="Windows">Windows Phone</label>
+            </p>
+          </fieldset>
+
+          <button class="user-info_button" type="submit">Отправить форму</button>
+          <p class="user__hint-text">
+            * - Обязательное поле
+          </p>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer-page--secondary">
+      <a href="index.html">
+        <img src="http://via.placeholder.com/147x40" alt="Логотип" class="footer-page__logo">
+      </a>
+      <!-- наверно нужна обертка - social?? -->
+      <ul class="footer-page__social social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Твитер</span>
+            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Твитер">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__url">
+            <span class="visually-hidden">Фейсбук</span>
+            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__url">
+            <span class="visually-hidden">YouTube</span>
+            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+      <p class="footer-page__developer">
+        Разработанно
+        <a href="#">
+          <span class="visually-hidden">Html-Academy</span>
+          <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Html-Academy">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

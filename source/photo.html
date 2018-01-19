@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="head-page head-page--secondary">
+      <!-- тут непонятно как сделать по БЭМ -->
+      <p class="navigation-setting">
+        <a href="#"><img class="pink-logo" src="http://via.placeholder.com/75x22" alt="Логотип PINK"></a>
+        <button>Закарыть</button>
+      </p>
+      <nav class="site-nav">
+        <ul class="site-list">
+          <li class="site__item"><a href="#">Главная</a></li>
+          <li class="site__item"><a href="#">Фотографии</a></li>
+          <li class="site__item"><a href="#">Конкурс</a></li>
+          <li class="site__item"><a href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+      <p class="preview">Фотографии пользователей</p> <!-- может заголовок ?-->
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Фотографии "Pink"</h1>
+      <div class="promo">
+        <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+
+      <section class="photo">
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
+
+        <ul class="photo__list">
+          <li class="photo__item ">
+            <img class="photot__picture" src="http://via.placeholder.com/320x137" alt="Панорма" class="photo__img">
+            <h2 class="photo__autor">Анна<span class="photo__date">(5 минут назад)</span></h2>
+            <p class="photo__comment">Прыгать или нет? НАпите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo__likes">
+              <button class="photo_button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 215</span>
+            </p>
+          </li>
+          <li class="photo__item">
+            <img class="photot__picture" src="http://via.placeholder.com/280x180" alt="Автомобиль" class="photo__img">
+            <h2 class="photo__autor">Левон<span class="photo__date">(5 часов назад)</span></h2>
+            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo__likes">
+              <button class="photo__button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 356</span>
+            </p>
+          </li>
+          <li class="photo__item">
+            <img class="photot__picture" src="http://via.placeholder.com/280x180" alt="Барабанная установка" class="photo__img">
+            <h2 class="photo__autor">Антон<span class="photo__date">(12 часов назад)</span></h2>
+            <p class="photo__comment">Соседи будут рады!</p>
+            <p class="photo__likes">
+              <button class="photo__button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 666</span>
+            </p>
+          </li>
+          <li class="photo__item">
+            <img class="photot__picture" src="http://via.placeholder.com/280x180" alt="Высокий потолок" class="photo__img">
+            <h2 class="photo__autor">Борис<span class="photo__date">(20 часов назад)</span></h2>
+            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo__likes">
+              <button class="photo__button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 215</span>
+            </p>
+          </li>
+          <li class="photo__item">
+            <img class="photot__picture" src="http://via.placeholder.com/280x180" alt="Ярамарка" class="photo__img">
+            <h2 class="photo__autor">Сергей<span class="photo__date">(25 часов назад)</span></h2>
+            <p class="photo__comment">Самая кубанская в мире!</p>
+            <p class="photo__likes">
+              <button class="photo__button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 4</span>
+            </p>
+          </li>
+           <li class="photo__item">
+            <img class="photot__picture" src="http://via.placeholder.com/280x180" alt="Горы, высоко, ноги" class="photo__img">
+            <h2 class="photo__autor">Максим<span class="photo__date">(40 часов назад)</span></h2>
+            <p class="photo__comment">Где снег-то?</p>
+            <p class="photo__likes">
+              <button class="photo__button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 150</span>
+            </p>
+          </li>
+          <li class="photo__item">
+            <img class="photot__picture" src="http://via.placeholder.com/280x180" alt="Крыло самолета" class="photo__img">
+            <h2 class="photo__autor">Надежда<span class="photo__date">(45 часов назад)</span></h2>
+            <p class="photo__comment">Всем GM и взаимные лайки!</p>
+            <p class="photo__likes">
+              <button class="photo__button">Мне нравитсья</button>
+              <span class="photo__like-count">Нравиться: 2560</span>
+            </p>
+          </li>
+      </section>
+
+      <div class="promo">
+        <p class="promo__text">Затмите всех! Выкладывайте все, что наколпилось в телефоне!</p>
+      </div>
+
+      <section class="new-photo">
+        <h2 class="vusually-hidden">Выложить фотографию</h2>
+        <img src="http://via.placeholder.com/280x180" alt="Заснеженая дорога" class="new-photo__picture">
+        <ul class="new-photo__setting-list">
+          <!-- название классов длинные получились -->
+          <li class="new-photo__setting-item new-photo__setting-item--crop">Кроп??</li>
+          <li class="new-photo__setting-item new-photo__setting-item--Fill">Заливка</li>
+          <li class="new-photo__setting-item new-photo__setting-item--сontrast">Контраст</li>
+        </ul>
+        <button class="new-photo__button">Запостить</button>
+        <button class="new-photo__button new-photo__button--cancel">Отмена</button>
+      </section>
+
+    </main>
+    <footer class="footer-page--secondary">
+      <a href="index.html">
+        <img src="http://via.placeholder.com/147x40" alt="Логотип" class="footer-page__logo">
+      </a>
+      <!-- наверно нужна обертка - social?? -->
+      <ul class="footer-page__social social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Твитер</span>
+            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Твитер">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__url">
+            <span class="visually-hidden">Фейсбук</span>
+            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__url">
+            <span class="visually-hidden">YouTube</span>
+            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+      <p class="footer-page__developer">
+        Разработанно
+        <a href="#">
+          <span class="visually-hidden">Html-Academy</span>
+          <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Html-Academy">
+        </a>
+      </p>
+    </footer>
+    </footer>
+  </body>
+</html>
