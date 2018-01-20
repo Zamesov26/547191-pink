@@ -5,25 +5,35 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="head-page head-page--main">
-      <!-- тут непонятно как сделать по БЭМ -->
-      <p class="navigation-setting">
-        <a href="#"><img class="pink-logo" src="http://via.placeholder.com/75x22" alt="Логотип PINK"></a>
-        <button>Закарыть</button>
-      </p>
-      <nav class="site-nav">
-        <ul class="site__list">
-          <li class="site__item"><a href="#">Главная</a></li>
-          <li class="site__item"><a href="#">Фотографии</a></li>
-          <li class="site__item"><a href="#">Конкурс</a></li>
-          <li class="site__item"><a href="#">Html Academy</a></li>
-        </ul>
+    <header class="page-header page-header--main">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://via.placeholder.com/75x22" alt="Логотип PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+            <a href="#">Конкурс</a>
+              </li>
+            <li class="site-list__item">
+              <a href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="page-main">
+
       <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
-      <img src="http://via.placeholder.com/320x462" alt="Демонстрация продукта" class="demo-product">
+      <img class="page-main__demo" src="http://via.placeholder.com/320x462" alt="Демонстрация продукта" class="demo-product">
 
       <section class="download">
         <h2 class="download__title">Загрузки</h2>
@@ -44,47 +54,67 @@
         <ul class="feature__list">
           <li class="feature__item">
             <h3 class="feauture__title">Поднимает настроение</h3>
-            <p class="feature__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="feature__descroption">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="feature__item">
             <h3 class="feauture__title">Меняет мир вокруг</h3>
-            <p class="feature__info">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="feature__descroption">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="feature__item">
             <h3 class="feauture__title">Зводит новых друзей</h3>
-            <p class="feature__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <p class="feature__descroption">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="http://via.placeholder.com/157x330" alt="Пример работы" class="feature-img">
+        <img class="features__demo" src="http://via.placeholder.com/157x330" alt="Пример работы" class="feature-img">
       </section>
 
-      <section class="reviws product--slider">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="reviws__list">
-          <li class="reviws__item">
-            <h3 class="reviws__title">Николай Петров</h3>
-            <p class="reviws__">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-          </li>
-        </ul>
+      <section class="reviws">
+        <div class="reviws__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviws__list slider__list">
+            <li class="reviws__item slider__item">
+              <h3 class="reviws__title">Николай Петров</h3>
+              <p class="reviws__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </li>
+            <li class="reviws__item slider__item">
+              <h3 class="reviws__title">Николай Петров</h3>
+              <p class="reviws__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </li>
+            <li class="reviws__item slider__item">
+              <h3 class="reviws__title">Николай Петров</h3>
+              <p class="reviws__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </li>
+          </ul>
+           <p class="reviws__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
 
-      <section class="product product--slider">
+      <section class="product">
+        <!-- мне кажется очень большая вложенность-->
         <h2 class="visually-hidden">Варинаты родукта</h2>
-        <ul class="product__list">
-          <li class="prodspan class="product__price">3,99 USD</span>
-            <ul class="product__list">
-              <li class="product__item product__item--yes">Розовый фильт</li>
-              <li class="product__item product__item--yes">Смайлики</li>
-              <li class="product__item product__item--no">Коментарии</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="product__wrapper slider">
+          <ul class="product__list slider__list">
+            <li class="product__item slider__item slider__item--hit">
+              <!-- для <p> было бы избыточно и для спанов придется что-то делать, чтобы на разных строках находились -->
+              <span class="prodect__title">Стандарт</span>
+              <span class="product__price">3,99 USD</span>
+              <ul class="product__property-list">
+                <li class="product__property-item product__property-item--yes">Розовый фильт</li>
+                <li class="product__property-item product__property-item--yes">Смайлики</li>
+                <li class="product__property-item product__property-item--no">Коментарии</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__promo">Остались вопросы?</p>
-        <p class="contacts__promo">Свяжитесь с нами!</p>
+        <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contact__list">
           <li class="contact__item">
             <h3 class="contact__title">Звоните:</h3>
@@ -99,10 +129,10 @@
             <span class="contact__info">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
-        <img src="http://via.placeholder.com/320x645" alt="Как до нас доехать" class="map">
+        <img class="contacts__map" src="http://via.placeholder.com/320x645" alt="Как до нас добраться" >
 
       </section>
     </main>
-    <!-- Без футера? или контакты это и есть футер -->
+    <!-- Без футера? или контакты это и есть футер?? -->
   </body>
 </html>
