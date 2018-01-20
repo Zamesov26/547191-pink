@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header page-header--main">
+    <header class="page-header">
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-image" src="http://via.placeholder.com/75x22" alt="Логотип PINK">
       </a>
@@ -31,7 +31,7 @@
     </header>
 
     <main class="page-main">
-
+      <!-- может h1 в хедер перекинуть, чтобы как на других страницах получилось? -->
       <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
       <img class="page-main__demo" src="http://via.placeholder.com/320x462" alt="Демонстрация продукта" class="demo-product">
 
@@ -39,9 +39,9 @@
         <h2 class="download__title">Загрузки</h2>
         <a href="#" class="dowload__button">Скачать приложение</a>
         <ul class="download__list">
-          <li class="download__item">Apple</li>
-          <li class="download__item">Android</li>
-          <li class="download__item">Windows</li>
+          <li class="download__item download__item--apple">Apple</li>
+          <li class="download__item download__item--android">Android</li>
+          <li class="download__item download__item--windows">Windows</li>
         </ul>
         <p class="download__info">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -85,6 +85,8 @@
               <p class="reviws__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </li>
           </ul>
+
+          <!-- ???????? -->
            <p class="reviws__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
@@ -96,10 +98,10 @@
       <section class="product">
         <!-- мне кажется очень большая вложенность-->
         <h2 class="visually-hidden">Варинаты родукта</h2>
-        <div class="product__wrapper slider">
-          <ul class="product__list slider__list">
-            <li class="product__item slider__item slider__item--hit">
-              <!-- для <p> было бы избыточно и для спанов придется что-то делать, чтобы на разных строках находились -->
+        <div class="product__wrapper ptoduct-slider">
+          <ul class="product__list ptoduct-slider__list">
+            <li class="product__item ptoduct-slider__item ptoduct-slider__item--hit">
+              <!-- для <p> было бы избыточно, но и для спанов придется что-то делать, чтобы на разных строках находились или таблицей сделать?-->
               <span class="prodect__title">Стандарт</span>
               <span class="product__price">3,99 USD</span>
               <ul class="product__property-list">
@@ -109,9 +111,20 @@
               </ul>
             </li>
           </ul>
+          </ul>
+
+          <!-- ???????? -->
+           <p class="product__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </section>
+    </main>
 
+    <footer class="page-footer">
+      <!-- если контакты в футере нужен ли тут секшн??? -->
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__promo">Остались вопросы? Свяжитесь с нами!</p>
@@ -130,9 +143,7 @@
           </li>
         </ul>
         <img class="contacts__map" src="http://via.placeholder.com/320x645" alt="Как до нас добраться" >
-
       </section>
-    </main>
-    <!-- Без футера? или контакты это и есть футер?? -->
+    </footer>
   </body>
 </html>

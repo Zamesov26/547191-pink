@@ -5,21 +5,30 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="head-page head-page--secondary">
-      <!-- тут непонятно как сделать по БЭМ -->
-      <p class="navigation-setting">
-        <a href="#"><img class="pink-logo" src="http://via.placeholder.com/75x22" alt="Логотип PINK"></a>
-        <button>Закарыть</button>
-      </p>
-      <nav class="site-nav">
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="#">Главная</a></li>
-          <li class="site-nav__item"><a href="#">Фотографии</a></li>
-          <li class="site-nav__item"><a href="#">Конкурс</a></li>
-          <li class="site-nav__item"><a href="#">Html Academy</a></li>
-        </ul>
+    <header class="page-header page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://via.placeholder.com/75x22" alt="Логотип PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+            <a href="#">Конкурс</a>
+              </li>
+            <li class="site-list__item">
+              <a href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <p class="preview">Конкурс на самое безбашенное путешествие с Пинк</p> <!-- может заголовок?-->
+      <h1 class="page-header_title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
     <main>
@@ -30,7 +39,7 @@
 
       <section class="user">
         <h2 class="visually-hidden">Заявка для участия</h2>
-        <table class="user__table" action="https://echo.htmlacademy.ru" method="post">
+        <form class="user__table" action="https://echo.htmlacademy.ru" method="post">
 
           <fieldset class="user__name text-fields">
             <legend class="visually-hidden">Как к вам обращаться</legend>
@@ -50,29 +59,29 @@
 
           <fieldset cass="user__achievement selection-fields">
             <legend>Ваши Безбашенные достижеия в путешествии</legend>
-            <p class="selection-fields__box">
-              <input class="selection-fields__check" id="shark" name="shark" type="checkbox">
-              <label class="selection-fields__label" for="shark">Сделал селфи с акулой</label>
+            <p class="checkbox">
+              <input class="checkbox__input" id="shark" name="shark" type="checkbox">
+              <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
             </p>
-            <p class="selection-fields__box">
-              <input class="selection-fields__check" id="beach" name="beach" type="checkbox">
-              <label class="selection-fields__label" for="beach">Обгорел на пляже</label>
+            <p class="checkbox">
+              <input class="checkbox__input" id="beach" name="beach" type="checkbox">
+              <label class="checkbox__label" for="beach">Обгорел на пляже</label>
             </p>
-            <p class="selection-fields__box">
-              <input class="selection-fields__check" id="Chuck-Norris" name="Chuck-Norris" type="checkbox">
-              <label class="selection-fields__label" for="Chuck-Norris">Видел Чака Норриса</label>
+            <p class="checkbox">
+              <input class="checkbox__input" id="Chuck-Norris" name="Chuck-Norris" type="checkbox">
+              <label class="checkbox__label" for="Chuck-Norris">Видел Чака Норриса</label>
             </p>
-            <p class="selection-fields__box">
-              <input class="selection-fields__check" id="souvenirs" name="souvenirs" type="checkbox">
-              <label class="selection-fields__label" for="souvenirs">Накупил сувениров</label>
+            <p class="checkbox">
+              <input class="chekbox__input" id="souvenirs" name="souvenirs" type="checkbox">
+              <label class="checkbox__label" for="souvenirs">Накупил сувениров</label>
             </p>
-            <p class="selection-fields__box">
-              <input class="selection-fields__check" id="turret" name="turret" type="checkbox">
-              <label class="selection-fields__label" for="turret">Удержал башню</label>
+            <p class="checkbox">
+              <input class="checkbox__input" id="turret" name="turret" type="checkbox">
+              <label class="checkbox__label" for="turret">Удержал башню</label>
             </p>
-            <p class="selection-fields__box">
-              <input class="selection-fields__check" id="hotel" name="hotel" type="checkbox">
-              <label class="selection-fields__label" for="hotel">Разгромил отель</label>
+            <p class="checkbox">
+              <input class="checkbox__input" id="hotel" name="hotel" type="checkbox">
+              <label class="checkbox__label" for="hotel">Разгромил отель</label>
             </p>
           </fieldset>
 
@@ -106,42 +115,40 @@
 
           <button class="user-info_button" type="submit">Отправить форму</button>
           <p class="user__hint-text">
-            * - Обязательное поле
+            <span class="user__hint-star">*</span> - Обязательное поле
           </p>
-        </table>
+        </form>
       </section>
+
     </main>
 
-    <footer class="footer-page--secondary">
+    <footer class="footer-page">
       <a href="index.html">
         <img src="http://via.placeholder.com/147x40" alt="Логотип" class="footer-page__logo">
       </a>
-      <!-- наверно нужна обертка - social?? -->
-      <ul class="footer-page__social social__list">
-        <li class="social__item">
-          <a href="#" class="social__link">
-            <span class="visually-hidden">Твитер</span>
-            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Твитер">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__url">
-            <span class="visually-hidden">Фейсбук</span>
-            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Фейсбук">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__url">
-            <span class="visually-hidden">YouTube</span>
-            <img class="social__picture" src="http://via.placeholder.com/45x45" alt="YouTube">
-          </a>
-        </li>
-      </ul>
-      <p class="footer-page__developer">
+      <div class="footer-page__wrapper socual">
+        <ul class="footer-page__social social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">Твитер</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="developer">
         Разработанно
-        <a href="#">
+        <a href="#" class="developer_link">
           <span class="visually-hidden">Html-Academy</span>
-          <img class="social__picture" src="http://via.placeholder.com/45x45" alt="Html-Academy">
         </a>
       </p>
     </footer>
