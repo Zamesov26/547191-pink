@@ -5,7 +5,8 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header page-header">
+    <header class="page-header">
+
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-image" src="http://via.placeholder.com/75x22" alt="Логотип PINK">
       </a>
@@ -14,13 +15,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="#">Фотографии</a>
             </li>
             <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a>Конкурс</a>
               </li>
             <li class="site-list__item">
               <a href="#">Html Academy</a>
@@ -29,16 +30,16 @@
         </div>
       </nav>
       <h1 class="page-header_title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
     </header>
 
-    <main>
-      <h1 class="visually-hidden">Форма для учатсия в конкурсе</h1>
-      <div class="promo">
-        <p class="promo__text">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-      </div>
+    <main class="page-main">
+
+      <p class="promo promo--secodary">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
 
       <section class="user">
         <h2 class="visually-hidden">Заявка для участия</h2>
+
         <form class="user__table" action="https://echo.htmlacademy.ru" method="post">
 
           <fieldset class="user__name text-fields">
@@ -113,11 +114,17 @@
             </p>
           </fieldset>
 
+          <fieldset class="user__emotions">
+            <legend>Опишите свои эмоции</legend>
+            <input class="user__emotions-input" name="emotions" type="textarea">
+          </fieldset>
+
           <button class="user-info_button" type="submit">Отправить форму</button>
           <p class="user__hint-text">
             <span class="user__hint-star">*</span> - Обязательное поле
           </p>
         </form>
+
       </section>
 
     </main>
