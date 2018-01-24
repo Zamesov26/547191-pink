@@ -1,0 +1,27 @@
+.site-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.site-list__item {
+	margin: 0;
+	padding: 14px 0;
+
+	border-top: 1px solid #485461;
+	border-bottom : 1px solid #000000;
+
+	text-align: center;
+	background-color:#283645;
+}
+
+.site-list__link {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+}

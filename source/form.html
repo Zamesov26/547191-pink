@@ -2,40 +2,41 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
 
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://via.placeholder.com/75x22" alt="Логотип PINK">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav"> 
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="#">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
-            <a>Конкурс</a>
-              </li>
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
             <li class="site-list__item">
-              <a href="#">Html Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">Html Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <h1 class="page-header_title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
+      <h1  class="page-header_title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
     <main class="page-main">
 
-      <p class="promo promo--secodary">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <p class="promo promo--secondary">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
 
       <section class="user">
         <h2 class="visually-hidden">Заявка для участия</h2>
@@ -45,21 +46,24 @@
           <fieldset class="user__name text-fields">
             <legend class="visually-hidden">Как к вам обращаться</legend>
             <p class="text-fields__box">
-              <label class="text-fields__label" for="surname">Фамилия</label>
-              <input class="text-fields__value" id="surname" name="surname" type="text">
+              <label class="text-fields__label" for="surname">Фамилия:</label>
+              <input class="text-fields__value" id="surname" name="surname" type="text" placeholder="Укажите фамилию *">
             </p>
             <p class="text-fields__box">
               <label class="text-fields__label" for="first-name">Имя</label>
-              <input class="text-fields__value" id="first-name" name="" type="text">
+              <input class="text-fields__value" id="first-name" name="" type="text" placeholder="Введите ваше имя *">
             </p>
             <p class="text-fields__box">
               <label class="text-fields__label" for="patronymic">Отчество</label>
-              <input class="text-fields__value" id="patronymic" name="patronymic" type="text">
+              <input class="text-fields__value" id="patronymic" name="patronymic" type="text" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
 
-          <fieldset cass="user__achievement selection-fields">
-            <legend>Ваши Безбашенные достижеия в путешествии</legend>
+          <fieldset class="user__achievement selection-fields">
+            <legend class="visually-hidden">Достижение в путешествии</legend>
+            <h3 class="selection-fields__title">
+              Ваши Безбашенные достижеия в путешествии
+            </h1>
             <p class="checkbox">
               <input class="checkbox__input" id="shark" name="shark" type="checkbox">
               <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
@@ -90,27 +94,30 @@
             <legend class="visually-hidden">Контактная информация</legend>
             <p class="text-fields__box">
               <label class="text-fields__label" for="telephone">Номер телефона</label>
-              <input class="text-fields__value" id="telephone" name="telephone" type="text">
+              <input class="text-fields__value" id="telephone" name="telephone" type="text" placeholder="Номер, пожалуйста">
             </p>
             <p class="text-fields__box">
               <label class="text-fields__label" for="address">Адрес почты</label>
-              <input class="text-fields__value" id="address" name="address" type="text">
+              <input class="text-fields__value" id="address" name="address" type="text" placeholder="Введите почту *">
             </p>
           </fieldset>
 
-          <fieldset  cass="user__os selection-fields">
-            <legend>С каким приложением путешествовали?</legend>
-            <p >
-              <input class="selection-fields__radio" id="iOS" name="iOS" type="radio">
-              <label class="selection-fields__label" for="iOS">Pink для iOS</label>
+          <fieldset  class="user__os selection-fields">
+            <legend class="visually-hidden">Ваше прирлоежние</legend>
+            <h3 class="selection-fields__title">
+              С каким приложением путешествовали?
+            </h3>
+            <p class="radiobox">
+              <input class="radiobox__input" id="iOS" name="iOS" type="radio">
+              <label class="radiobox__label" for="iOS">Pink для iOS</label>
             </p>
-            <p >
-              <input class="selection-fields__radio" id="Android" name="Android" type="radio">
-              <label class="selection-fields__label" for="Android">Pink на Android</label>
+            <p class="radiobox">
+              <input class="radiobox__input" id="Android" name="Android" type="radio">
+              <label class="radiobox__label" for="Android">Pink на Android</label>
             </p>
-            <p >
-              <input class="selection-fields__radio" id="Windows" name="Windows" type="radio">
-              <label class="selection-fields__label" for="Windows">Windows Phone</label>
+            <p class="radiobox">
+              <input class="radiobox__input" id="Windows" name="Windows" type="radio">
+              <label class="radiobox__label" for="Windows">Windows Phone</label>
             </p>
           </fieldset>
 
@@ -119,7 +126,7 @@
             <input class="user__emotions-input" name="emotions" type="textarea">
           </fieldset>
 
-          <button class="user-info_button" type="submit">Отправить форму</button>
+          <button class="user__button" type="submit">Отправить форму</button>
           <p class="user__hint-text">
             <span class="user__hint-star">*</span> - Обязательное поле
           </p>
@@ -131,32 +138,34 @@
 
     <footer class="footer-page">
       <a href="index.html">
-        <img src="http://via.placeholder.com/147x40" alt="Логотип" class="footer-page__logo">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" class="footer-page__logo">
       </a>
       <div class="footer-page__wrapper socual">
         <ul class="footer-page__social social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">
+          <li class="social__item social__item--twitter">
+            <a href="#" class="social__link">
               <span class="visually-hidden">Твитер</span>
             </a>
           </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">
+          <li class="social__item social__item--facebook">
+            <a href="#" class="social__link">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">
+          <li class="social__item social__item--youtube">
+            <a href="#" class="social__link">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
       </div>
       <p class="developer">
-        Разработанно
-        <a href="#" class="developer_link">
-          <span class="visually-hidden">Html-Academy</span>
-        </a>
+        Разработанно     
+        <span class="developer__wrapper">
+          <a href="#" class="developer_link">
+            <span class="visually-hidden">Html-Academy </span>
+          </a>
+        </span>  
       </p>
     </footer>
   </body>

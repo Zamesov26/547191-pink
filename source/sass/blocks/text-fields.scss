@@ -1,0 +1,27 @@
+.text-fields {
+	border: none;
+}
+
+.text-fields__label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	color: #d22856;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.text-fields__value {
+	display: block;
+
+	margin: 0;
+	padding: 14px 20px;
+	width: 278px;
+
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #283645;
+	font-weight: 400;
+}

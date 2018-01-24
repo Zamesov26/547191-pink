@@ -1,0 +1,29 @@
+.button {
+	margin: 0;
+	padding: 14px 0 17px 0;
+	display: block;
+
+	width: 274px;
+
+	background: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;	
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+	border: 3px solid #ffffff;
+	border-radius: 30px;
+
+	&:disabled {
+		color: #283645;
+		border-color: #283645;
+		opacity: 0.1;
+	}
+}
+
+.button-pink {
+	color: #d22856;
+	border-color: #d22856;
+}
