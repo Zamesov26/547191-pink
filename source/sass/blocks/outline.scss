@@ -1,0 +1,22 @@
+.visually-hidden {
+  position: absolute;
+  padding: 0;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-image :
+                     url("../img/iphone-hand-mobile@1x.png"),
+                      url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-position: calc(50% + 200px) 50px, top center;
+  margin: 0;
+  padding: 0;
+}

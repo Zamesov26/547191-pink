@@ -1,3 +1,7 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/outline.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/button.scss";
@@ -19,16 +23,3 @@
 @import "blocks/selection-fields.scss";
 @import "blocks/checkbox.scss";
 @import "blocks/radiobox.scss";
-
-.visually-hidden {
-  position: absolute;
-  padding: 0;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

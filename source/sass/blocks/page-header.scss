@@ -1,13 +1,31 @@
 .page-header {
-	background-color : #1d2631;
-	background-image : url("../img/bg-back-mobile@1x.jpg");
-	background-repeat: no-repeat;
+  width: 100%;
+  background-color : rgba(0, 0, 0, 0.3);
+  // background-image : url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-header__wrapper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header_title {
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 300;
-	color: #ffffff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+@media (min-width: $desktop-width) {
+  .page-heder {
+
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $desktop-width;
+  }
 }

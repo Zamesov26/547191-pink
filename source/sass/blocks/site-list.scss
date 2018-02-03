@@ -25,3 +25,29 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media (min-width: 960px) {
+  .site-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    padding: 0;
+    margin-right: 80px;
+
+    border: none;
+    background: none;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    text-transform: none;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+}

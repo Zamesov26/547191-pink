@@ -1,25 +1,25 @@
 .developer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: #283645;
-	font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  font-weight: 400;
 }
 
 .developer__wrapper {
-	display: inline-block;
+  display: inline-block;
 
-	width: 27px;
-	height: 35px;
+  width: 27px;
+  height: 35px;
 
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/logo-htmlacademy.svg");
 }
