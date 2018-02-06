@@ -7,31 +7,33 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
-  <header class="page-header">
-
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1  class="page-header_title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <header class="page-header page-header--secodary">
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
+    </div>
+    <h1  class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </header>
 
   <main class="page-main">
@@ -60,10 +62,7 @@
         </fieldset>
 
         <fieldset class="user__achievement selection-fields">
-          <legend class="visually-hidden">Достижение в путешествии</legend>
-          <h3 class="selection-fields__title">
-            Ваши Безбашенные достижеия в путешествии
-          </h1>
+          <legend class="selection-fields__title">Ваши Безбашенные достижеия в путешествии</legend>
           <p class="checkbox">
             <input class="checkbox__input" id="shark" name="shark" type="checkbox">
             <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
@@ -90,36 +89,35 @@
           </p>
         </fieldset>
 
-        <fieldset class="user__contact text-fields">
-          <legend class="visually-hidden">Контактная информация</legend>
-          <p class="text-fields__box">
+        <fieldset class="user__contact selection-fields">
+          <legend class="selection-fields__title">Контактная информация</legend>
+          <p class="text-fields__box text-fields__box--contact">
             <label class="text-fields__label" for="telephone">Номер телефона</label>
             <input class="text-fields__value" id="telephone" name="telephone" type="text" placeholder="Номер, пожалуйста">
           </p>
-          <p class="text-fields__box">
+          <p class="text-fields__box  text-fields__box--contact">
             <label class="text-fields__label" for="address">Адрес почты</label>
             <input class="text-fields__value" id="address" name="address" type="text" placeholder="Введите почту *">
           </p>
         </fieldset>
 
-        <fieldset  class="user__os selection-fields">
-          <legend class="visually-hidden">Ваше прирлоежние</legend>
-          <h3 class="selection-fields__title">
-            С каким приложением путешествовали?
-          </h3>
-          <p class="radiobox">
-            <input class="radiobox__input" id="iOS" name="iOS" type="radio">
-            <label class="radiobox__label" for="iOS">Pink для iOS</label>
-          </p>
-          <p class="radiobox">
-            <input class="radiobox__input" id="Android" name="Android" type="radio">
-            <label class="radiobox__label" for="Android">Pink на Android</label>
-          </p>
-          <p class="radiobox">
-            <input class="radiobox__input" id="Windows" name="Windows" type="radio">
-            <label class="radiobox__label" for="Windows">Windows Phone</label>
-          </p>
-        </fieldset>
+    <div class="user__grey-wrapper">
+      <fieldset  class="user__os selection-fields">
+        <legend class="selection-fields__title">С каким приложением путешествовали?</legend>
+        <p class="radiobox">
+          <input class="radiobox__input" id="iOS" name="iOS" type="radio">
+          <label class="radiobox__label" for="iOS">Pink для iOS</label>
+        </p>
+        <p class="radiobox">
+          <input class="radiobox__input" id="Android" name="Android" type="radio">
+          <label class="radiobox__label" for="Android">Pink на Android</label>
+        </p>
+        <p class="radiobox">
+          <input class="radiobox__input" id="Windows" name="Windows" type="radio">
+          <label class="radiobox__label" for="Windows">Windows Phone</label>
+        </p>
+      </fieldset>
+    </div>
 
         <fieldset class="user__emotions">
           <legend>Опишите свои эмоции</legend>

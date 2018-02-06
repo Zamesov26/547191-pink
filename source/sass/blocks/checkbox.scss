@@ -1,7 +1,20 @@
+.checkbox {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .checkbox__label {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+}
+
+@media (min-width: 660px) {
+  .checkbox {
+    width: auto;
+    margin: 0;
+  }
 }

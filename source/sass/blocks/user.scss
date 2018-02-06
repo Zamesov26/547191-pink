@@ -1,3 +1,12 @@
+.user__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.user__grey-wrapper {
+  background-color: #f2f2f2;
+}
+
 .user__button {
   display: block;
   margin: 0;
@@ -12,4 +21,53 @@
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+}
+
+.user__emotions {
+  border: none;
+}
+
+@media (min-width: 660px) {
+  .user__grey-wrapper {
+    background-color: inherit;
+  }
+
+  .user__achievement {
+    order: 2;
+  }
+
+  .user__contact {
+    order: 1;
+  }
+
+  .user__emotions {
+    order: 2;
+  }
+
+  .user__button {
+    order: 2;
+  }
+
+  .user__hint-text {
+    order: 2;
+  }
+}
+
+@media (min-width:960px) {
+
+  .user__table {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .user__name {
+    width: 470px;
+  }
+
+  .user__os {
+    width: 470px;
+  }
 }

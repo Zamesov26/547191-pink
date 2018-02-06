@@ -26,3 +26,27 @@
   line-height: 30px;
   font-weight: 400;
 }
+
+.reviws-slider__about {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .reviws-slider__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviws-slider__title {
+    order: 1;
+  }
+
+  .reviws-slider__text {
+    font-size: 18px;
+  }
+
+  .reviws-slider__about {
+    order: 2;
+    display: inline;
+  }
+}

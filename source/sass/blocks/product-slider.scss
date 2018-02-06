@@ -1,70 +1,39 @@
-.product-slider__list {
-  margin: 0;
-  padding: 0;
-  max-width: 276px;
-
-  list-style: none;
-  border-right: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
+.product__table{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.product-slider__item {
-  background-color: #283645;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  &--hit {
-    background-image: url("../img/bg-hit.svg");
-  }
-}
-
-.product-slider__title {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
+.product__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 30px;
-    color: #ffffff;
-    font-weight: bold;
-  text-align: center;
   text-transform: uppercase;
+  color: white;
+  background-color: #283645;
 }
+.product__price {
+  display: block;
 
-.product-slider__price {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 15px;
-
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  line-height: 30px;
-    color: #ffffff;
-    font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
+  font-weight: 300;
 }
 
-.product-slider__property-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-  background-color: #ffffff;
-}
-
-.product-slider__property-item {
-  margin: 0;
-  padding: 15px 0 15px 22px;
+.product__cell{
+  width: 280px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 30px;
-    color: #283645;
-    font-weight: 400;
-    text-transform: uppercase;
-  border-bottom: 2px solid #e5e5e5;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #283645;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: 90% center;
 
@@ -73,5 +42,42 @@
   }
   &--no {
     background-image: url("../img/icon-no.svg");
+  }
+}
+
+.product--pink::before {
+  content: "Розовый фильтр";
+}
+.product--smile::before {
+  content: "Смайлики";
+}
+.product--comment::before {
+  content: "Комментарии";
+}
+
+@media (max-width: 660px) {
+  .product__cell:first-child {
+    width: 0;
+    padding: 0;
+  }
+  .product__cell:first-child::before {
+    content: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .product__cell {
+    width: 150px;
+    background-position: center;
+  }
+
+  .product__cell:not(:first-child)::before {
+    content: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .product__cell {
+    width: 235px;
   }
 }

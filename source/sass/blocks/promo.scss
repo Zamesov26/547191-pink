@@ -1,6 +1,10 @@
 .promo {
+  max-width: 280px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
+  margin-bottom: 20px;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
@@ -9,8 +13,31 @@
   color: #283645;
 }
 
+@media (min-width: 660px) {
+  .promo {
+    margin-bottom: 0;
+    font-size: 40px;
+    max-width: 590px;
+  }
+}
+
+@media (min-width: 960px) {
+  .promo {
+    font-size: 50px;
+    max-width: 750px;
+  }
+}
+
 .promo--secondary {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+}
+
+@media (min-width:660px) {
+  font-size: 18px;
 }

@@ -38,42 +38,49 @@
   </header>
 
   <main class="page-main">
-
     <section class="download">
-      <h2 class="visually-hidden">Загрузки</h2>
-      <a href="#" class="dowload__button button">Скачать приложение</a>
-      <ul class="download__list">
-        <li class="download__item download__item--apple"><span class="visually-hidden">Apple</span></li>
-        <li class="download__item download__item--android"><span class="visually-hidden">Android</span></li>
-        <li class="download__item download__item--microsoft"><span class="visually-hidden">Windows</span></li>
-      </ul>
-      <p class="download__info">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="download__wrapper">
+        <h2 class="visually-hidden">Загрузки</h2>
+        <span class="download__slogan">Взгляните на жизнь иначе!</span>
+        <a href="#" class="dowload__button button">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item download__item--apple"><span class="visually-hidden">Apple</span></li>
+          <li class="download__item download__item--android"><span class="visually-hidden">Android</span></li>
+          <li class="download__item download__item--microsoft"><span class="visually-hidden">Windows</span></li>
+        </ul>
+        <p class="download__info">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
 
     <section class="features">
       <h2 class="visually-hidden">Особенности продукта</h2>
       <p class="promo">Устали от серости мегаполиса?</p>
-      <p class="promo">Нам есть, что вам предложить!</p>
+      <p class="promo">Нам есть, что вам<br>предложить!</p>
 
       <ul class="features__list">
         <li class="features__item">
           <h3 class="feautures__title">Поднимает настроение</h3>
-          <p class="features__descroption">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <p class="features__description">Приложение позволит вам победить осеннюю хандру и&#160;депрессию буквально в несколько кликов!</p>
           <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
         </li>
         <li class="features__item">
           <h3 class="feautures__title">Меняет мир вокруг</h3>
-          <p class="features__descroption">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <p class="features__description">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
           <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
         </li>
         <li class="features__item">
           <h3 class="feautures__title">Зводит новых друзей</h3>
-          <p class="features__descroption">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
+          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <img class="features__demo features__demo--last" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
         </li>
       </ul>
-
     </section>
+
+   <section class="research">
+     <h2 class="research__title">Эффект на 24 часа!</h2>
+     <p class="research__text">Британские ученые провели исследования и доказали, что положитлеьный эффект от исспользования прилложения длтится целые сутки!</p>
+     <a href="#" class="research__about">Узнать больше об исследовании</a>
+   </section>
 
     <section class="reviws">
       <div class="reviws__wrapper reviws-slider">
@@ -82,14 +89,7 @@
           <li class="reviws-slider__item">
             <h3 class="reviws-slider__title">Николай Петров</h3>
             <p class="reviws-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-          </li>
-          <li class="reviws-slider__item">
-            <h3 class="reviws-slider__title">Николай Петров</h3>
-            <p class="reviws-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-          </li>
-          <li class="reviws-slider__item">
-            <h3 class="reviws-slider__title">Николай Петров</h3>
-            <p class="reviws-slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <span class="reviws-slider__about">25 лет, водитель трамвая</span>
           </li>
         </ul>
         <p class="reviws__toggles slider__toggles">
@@ -102,46 +102,62 @@
 
     <section class="product">
       <h2 class="visually-hidden">Варинаты родукта</h2>
-      <div class="product__wrapper ptoduct-slider">
-        <ul class="product-slider__list">
-          <li class="product-slider__item product-slider__item--hit">
-            <p class="product-slider__title">Стандарт</p>
-            <p class="product-slider__price">3,99 USD</p>
-            <ul class="product-slider__property-list">
-              <li class="product-slider__property-item product-slider__property-item--yes">Розовый фильт</li>
-              <li class="product-slider__property-item product-slider__property-item--yes">Смайлики</li>
-              <li class="product-slider__property-item product-slider__property-item--no">Коментарии</li>
-            </ul>
-          </li>
-        </ul>
+
+        <table class="product__table">
+          <tr>
+            <th></th>
+            <th class="product__title">База<span class="product__price">1,99 USD</span></th>
+            <th class="product__title">Стандарт<span class="product__price">3,99 USD</span></th>
+            <th class="product__title ">Анлим<span class="product__price">9,99 USD</span></th>
+          </tr>
+          <tr>
+            <td class="product__cell product--pink"><span class="visually-hidden product__pink">Розовый фильтр</span></td>
+            <td class="product__cell product__cell--yes product--pink"><span class="visually-hidden">да</span></td>
+            <td class="product__cell product__cell--yes  product--pink"><span class="visually-hidden">да</span></td>
+            <td class="product__cell product__cell--yes  product--pink"><span class="visually-hidden">да</span></td>
+          </tr>
+          <tr>
+            <td class="product__cell product--smile"><span class="visually-hidden">Смайлики</span></td>
+            <td class="product__cell product__cell--no  product--smile"><span class="visually-hidden">нет</span></td>
+            <td class="product__cell product__cell--yes  product--smile"><span class="visually-hidden">да</span></td>
+            <td class="product__cell product__cell--yes  product--smile"><span class="visually-hidden">да</span></td>
+          </tr>
+          <tr>
+            <td class="product__cell product--comment"><span class="visually-hidden">Комментарии</span></td>
+            <td class="product__cell product__cell--no   product--comment"><span class="visually-hidden">нет</span></td>
+            <td class="product__cell product__cell--no   product--comment"><span class="visually-hidden">нет</span></td>
+            <td class="product__cell product__cell--yes  product--comment"><span class="visually-hidden">да</span></td>
+          </tr>
+        </table>
+
         <p class="product__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
-      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <h2 class="visually-hidden">Контакты</h2>
-    <p class="promo">Остались вопросы? Свяжитесь с нами!</p>
-    <ul class="page-footer__list">
-      <li class="page-footer__item">
-        <h3 class="page-footer__title">Звоните:</h3>
-        <span class="page-footer__info">+7 (812) 555-66-66</span>
-      </li>
-      <li class="page-footer__item">
-        <h3 class="page-footer__title">Пишите:</h3>
-        <span class="page-footer__info">mail@gtmlacademy.ru</span>
-      </li>
-      <li class="page-footer-item">
-        <h3 class="page-footer__title">Приезжайте в гости:</h3>
-        <span class="page-footer__info">ул. Большая Конюшенная, 19/8</span>
-      </li>
-    </ul>
-    <img class="page-foote__map" src="img/bg-map-mobile@1x.png" alt="Как до нас добраться" >
-  </section>
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="promo">Остались вопросы?</p>
+      <p class="promo">Свяжитесь с нами!</p>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <h3 class="page-footer__title">Звоните:</h3>
+          <span class="page-footer__info">+7 (812) 555-66-66</span>
+        </li>
+        <li class="page-footer__item page-footer__item--desctop">
+          <h3 class="page-footer__title">Пишите:</h3>
+          <span class="page-footer__info">mail@gtmlacademy.ru</span>
+        </li>
+        <li class="page-footer__item">
+          <h3 class="page-footer__title">Приезжайте в гости:</h3>
+          <span class="page-footer__info">ул. Большая Конюшенная,&#160;19/8</span>
+        </li>
+      </ul>
+    </div>
+    <img class="page-foote__map" src="img/bg-map-mobile@1x.png" alt="Как до нас добраться">
 </footer>
 </body>
 </html>

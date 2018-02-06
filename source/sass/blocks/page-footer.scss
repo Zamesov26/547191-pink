@@ -35,3 +35,37 @@
   font-weight: 300;
   color: #d22856;
 }
+
+@media (min-width: 660px) {
+  .page-footer {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-footer--secondary {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ .page-footer__item {
+   width: 300px;
+ }
+}
+
+@media (min-width: 960px) {
+  .page-footer {
+    max-width: 960px;
+
+  }
+
+  .page-footer__item--desctop {
+    order: 1;
+  }
+}

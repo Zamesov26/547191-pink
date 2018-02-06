@@ -7,38 +7,40 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
-  <header class="page-header">
-
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">Html Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1  class="page-header_title">Фотографии пользователей</h1>
+  <header class="page-header page-header--secodary">
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
+    </div>
+    <h1  class="page-header__title">Фотографии пользователей</h1>
 
   </header>
 
   <main class="page-main">
 
     <section class="photo">
-      <p class="promo promo--secondary">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="promo promo--secondary">Взгляните на фотографии, которые выкладывают пользователи!</P> <p class="promo promo--secondary">Видите, как не хватает ваших?</p>
       <h2 class="visually-hidden">Фотографии пользователей</h2>
 
       <ul class="photo__list">
@@ -126,7 +128,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--secondary">
     <a href="index.html">
       <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" class="footer-page__logo">
     </a>

@@ -1,6 +1,21 @@
 .reviws {
+  width: 280px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  .reviws {
+    width: 640px;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviws {
+    width: 960px;
+  }
 }

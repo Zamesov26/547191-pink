@@ -1,4 +1,7 @@
 .new-photo {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
@@ -26,5 +29,21 @@
   }
   &--сontrast {
     background-image: url("../img/icon-editor-contrast.svg");
+  }
+}
+
+@media (min-width: 660px) {
+  .new-photo {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .new-photo {
+    max-width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
