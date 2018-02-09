@@ -2,12 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-
+  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>HTML Academy: Пинк</title>
 </head>
 <body>
+
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav">
@@ -33,7 +35,6 @@
         </div>
       </nav>
       <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
-      <!-- <img class="page-header__main-img" src="img/iphone-hand-mobile@1x.png"> -->
     </div>
   </header>
 
@@ -57,23 +58,31 @@
       <p class="promo">Устали от серости мегаполиса?</p>
       <p class="promo">Нам есть, что вам<br>предложить!</p>
 
-      <ul class="features__list">
-        <li class="features__item">
-          <h3 class="feautures__title">Поднимает настроение</h3>
-          <p class="features__description">Приложение позволит вам победить осеннюю хандру и&#160;депрессию буквально в несколько кликов!</p>
-          <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
-        </li>
-        <li class="features__item">
-          <h3 class="feautures__title">Меняет мир вокруг</h3>
-          <p class="features__description">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
-        </li>
-        <li class="features__item">
-          <h3 class="feautures__title">Зводит новых друзей</h3>
-          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          <img class="features__demo features__demo--last" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
-        </li>
-      </ul>
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="feautures__title">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и&#160;депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="feautures__title">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="feautures__title">Зводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <ul class="features__img-list">
+          <li><img class="features__demo features__demo--last" src="img/iphone-screen-mobile@1x.png" alt="Пример работы"></li>
+          <li>
+            <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
+          </li>
+          <li>
+            <img class="features__demo" src="img/iphone-screen-mobile@1x.png" alt="Пример работы">
+          </li>
+        </ul>
+      </features__wrapper>
     </section>
 
    <section class="research">

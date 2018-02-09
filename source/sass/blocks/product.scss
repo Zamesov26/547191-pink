@@ -1,3 +1,30 @@
 .product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  overflow: hidden;
   background-color: #f2f2f2;
+}
+
+.product__table {
+  width: 840px;
+  transform: translateX(-260px);
+}
+
+
+@media (min-width: 660px) {
+  .product{
+    width: auto;
+  }
+
+  .product__table {
+    transform: none;
+    width: 620px;
+  }
+}
+
+@media (min-width: 960px) {
+  .product__table {
+    width: 940px;
+  }
 }

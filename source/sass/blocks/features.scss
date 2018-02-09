@@ -14,6 +14,7 @@
   list-style: none;
 }
 
+
 .features__demo {
   display: none;
 
@@ -53,20 +54,36 @@
   color: #283645;
 }
 
-@media (min-width: 660px) {
+.features__img-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 
+}
+
+@media (min-width: 660px) {
+  .features__wrapper {
+    display: flex;
+  }
     .features__list {
+      order: 1;
       width: 660px;
-      padding-left: 400px;
     }
     .features__list {
       width: 310px;
 
       text-align: left;
     }
+
+    .features__img-list {
+      justify-content: space-between;
+    }
 }
 
 @media (min-width: 960px) {
+  .features__wrapper {
+    display: block;
+  }
   .features__list {
     display: flex;
 
