@@ -2,9 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>HTML Academy: Пинк</title>
 </head>
 <body>
   <header class="page-header page-header--secodary">
@@ -113,19 +115,38 @@
     <p class="promo promo--secondary">Затмите всех! Выкладывайте все, что наколпилось в телефоне!</p>
 
     <section class="new-photo">
-      <h2 class="vusually-hidden">Выложить фотографию</h2>
+      <h2 class="visually-hidden">Выложить фотографию</h2>
       <img src="img/photo-road-mobile@1x.jpg" alt="Заснеженая дорога" class="new-post__picture">
-      <ul class="new-photo__setting-list">
-        <li class="new-photo__setting-item new-photo__setting-item--crop"><span class="visually-hidden">Кроп??</span></li>
-        <li class="new-photo__setting-item new-photo__setting-item--fill"><span class="visually-hidden">Заливка</span></li>
-        <li class="new-photo__setting-item new-photo__setting-item--сontrast"><span class="visually-hidden">Контраст</span></li>
-      </ul>
-      <input class="new-photo__range" type="range" min="0" max="100" step="1" value="50">
-
-      <button class="new-post__button button button-pink">Запостить</button>
-      <button class="new-post__button new-post__button button" disabled>Отмена</button>
+      <div class="new-photo__wrapper">
+        <ul class="new-photo__setting-list">
+          <li class="new-photo__setting-item new-photo__setting-item--crop">
+            <button>
+              <span class="visually-hidden">Кроп??</span>
+              <img src="../img/icon-editor-crop.svg">
+            </button>
+          </li>
+          <li class="new-photo__setting-item new-photo__setting-item--crop">
+            <button>
+              <span class="visually-hidden">Кроп??</span>
+              <img src="../img/icon-editor-fill.svg">
+            </button>
+          </li>
+          <li class="new-photo__setting-item new-photo__setting-item--crop">
+            <button>
+              <span class="visually-hidden">Кроп??</span>
+              <img src="../img/icon-editor-contrast.svg">
+            </button>
+          </li>
+        </ul>
+        <ul class="new-photo__range-list">
+          <li><input class="new-photo__range" type="range" min="0" max="100" step="1" value="50"></li>
+          <li><input class="new-photo__range" type="range" min="0" max="100" step="1" value="50"></li>
+          <li><input class="new-photo__range" type="range" min="0" max="100" step="1" value="50"></li>
+        </ul>
+        <button class="new-photo__button button button-pink">Запостить</button>
+        <button class="new-photo__button new-post__button button" disabled>Отмена</button>
+      </div>
     </section>
-
   </main>
 
   <footer class="page-footer page-footer--secondary">

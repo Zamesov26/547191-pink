@@ -22,7 +22,7 @@
   background-position: center center;
 
   &--crop {
-    background-image: url("../img/icon-editor-crop.svg");
+    // background-image: url("../img/icon-editor-crop.svg");
   }
   &--fill {
     background-image: url("../img/icon-editor-fill.svg");
@@ -32,18 +32,41 @@
   }
 }
 
+@media (max-width:659px) {
+  .new-photo__range-list li:not(:first-child) {
+    display: none;
+  }
+}
+
 @media (min-width: 660px) {
   .new-photo {
+    display: flex;
     max-width: 660px;
     margin-left: auto;
     margin-right: auto;
   }
+  .new-photo__setting-list {
+    display: none;
+  }
 }
 
 @media (min-width: 960px) {
+  .new-photo__range-list {
+    width: 100%;
+  }
   .new-photo {
     max-width: 940px;
     padding-left: 80px;
     padding-right: 60px;
+  }
+  .new-photo__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .new-photo__button {
+    width: 183px;
   }
 }
