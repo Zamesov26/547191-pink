@@ -11,11 +11,13 @@
 <body>
 
   <header class="page-header">
-        <nav class="main-nav">
-          <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
@@ -30,10 +32,10 @@
               <a class="site-list__link" href="#">Html Academy</a>
             </li>
           </ul>
-        </nav>
-      <div class="page-header__wrapper">
-        <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
-      </div>
+        </div>
+      </nav>
+      <h1 class="visually-hidden">Сайт приложения "Pink"</h1>
+    </div>
   </header>
 
   <main class="page-main">
