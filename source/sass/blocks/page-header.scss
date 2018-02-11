@@ -1,22 +1,15 @@
-.page-header {
-  width: 100%;
+.page-header__wrapper {
   min-height: 460px;
   background-repeat: no-repeat,repeat;
   background-position: bottom center, center top;
   background-image :
-                      url("../img/iphone-hand-mobile@1x.png"),
+                       url("../img/iphone-hand-mobile@1x.png"),
                        url("../img/bg-back-mobile@1x.jpg");
 }
 
 .page-header--secodary {
   min-height: 240px;
   background-repeat: repeat-x;
-  background-image:  url("../img/bg-back-mobile@1x.jpg");
-}
-
-.page-header__wrapper {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-header__title {
@@ -60,9 +53,7 @@
   }
 
   .page-header__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: $desktop-width;
+    border-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header_title {
